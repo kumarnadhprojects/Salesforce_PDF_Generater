@@ -21,7 +21,7 @@ export default class JspdfDemo extends LightningElement {
             loadScript(this, JSPDF)
         ]);
     }
-// Generate PDF Ligic
+// Generate PDF Logic
     generatePdf(){
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
