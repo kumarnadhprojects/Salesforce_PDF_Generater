@@ -1,0 +1,13 @@
+<template>
+    <lightning-input type="email" onchange={handleChange} label="Enter Email"></lightning-input>
+    <lightning-file-upload
+        label="Attach receipt"
+        name="fileUploader"
+        accept={acceptedFormats}
+        record-id={myRecordId}
+        onuploadfinished={handleUploadFinished}
+        multiple
+    >
+    </lightning-file-upload>
+    <lightning-button variant="brand" label="send" onclick={handleClick}></lightning-button>
+</template>
